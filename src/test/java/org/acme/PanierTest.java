@@ -28,21 +28,21 @@ class PanierTest {
     @Test
     void verifieFruit() {
         Panier p = new Panier(1, EnumFruit.APPLE);
-        Fruit f = new Fruit(1, EnumFruit.APPLE);
+        Fruit f = new Fruit(EnumFruit.APPLE);
         assertTrue(p.verifieFruit(f));
     }
 
     @Test
     void verifieFruit2() {
         Panier p = new Panier(1, EnumFruit.APPLE);
-        Fruit f = new Fruit(1, EnumFruit.BANANA);
+        Fruit f = new Fruit(EnumFruit.BANANA);
         assertFalse(p.verifieFruit(f));
     }
 
     @Test
     void verifieFruit3() {
         Panier p = new Panier(1, EnumFruit.APPLE);
-        Fruit f = new Fruit(1, EnumFruit.BANANA);
+        Fruit f = new Fruit(EnumFruit.BANANA);
         f.setEtat(EnumEtat.POURRI);
         assertFalse(p.verifieFruit(f));
     }
@@ -50,7 +50,7 @@ class PanierTest {
     @Test
     void verifieFruit4() {
         Panier p = new Panier(1, EnumFruit.APPLE);
-        Fruit f = new Fruit(1, EnumFruit.APPLE);
+        Fruit f = new Fruit(EnumFruit.APPLE);
         f.setEtat(EnumEtat.POURRI);
         assertFalse(p.verifieFruit(f));
     }
