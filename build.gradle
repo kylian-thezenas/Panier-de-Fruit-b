@@ -13,6 +13,9 @@ dependencies {
     implementation 'io.quarkus:quarkus-resteasy-reactive'
     implementation 'io.quarkus:quarkus-arc'
     implementation 'org.java-websocket:Java-WebSocket:1.5.2'
+    implementation 'javax.websocket:javax.websocket-api:1.1'
+    implementation 'org.eclipse.jetty.websocket:javax-websocket-server-impl:9.4.43.v20210629'
+    implementation 'org.glassfish.tyrus:tyrus-server:1.15'
     testImplementation 'io.quarkus:quarkus-junit5'
     testImplementation 'io.rest-assured:rest-assured'
 }
